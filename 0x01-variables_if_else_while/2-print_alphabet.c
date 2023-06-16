@@ -1,5 +1,3 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 
 /**
@@ -9,7 +7,7 @@
 int main(void)
 {
 char alpha;
-for (alpha = 'a'; alpha <= 'z'; ch++)
+for (alpha = 'a'; alpha <= 'z'; alpha++)
 {
 putchar(alpha);
 }
