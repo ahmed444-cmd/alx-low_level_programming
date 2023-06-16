@@ -2,11 +2,10 @@
 #include <time.h>
 #include <stdio.h>
 
-/** main - will assign a random number to the variable
- *  n each time it is executed. Complete the source code
- *   in order to print whether the number stored in the
- *   variable n is positive or negative.
-/*   return : 0*/
+/** 
+ * main - will assign a random number negative ,positive and zero
+ * Return: Always 0 (Success)
+ */ 
 
 
 int main(void)
