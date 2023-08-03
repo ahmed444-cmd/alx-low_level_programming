@@ -5,7 +5,8 @@
  * main - check the code
  *
  * Return: Always 0.
- */
+*/
+
 int main(void)
 {
     unsigned long int n;
@@ -19,4 +20,6 @@ int main(void)
     n = 98;
     clear_bit(&n, 1);
     printf("%lu\n", n);
+    
     return (0);
+}
