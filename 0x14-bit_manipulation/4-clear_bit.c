@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * clear_bit - program that transform the value of a bit to 0 with a known index
+ * clear_bit - a func that transform the value of a bit to 0 with a known index
  * @n: value of the bit
  * @index: index
  * Return: 1 if success, -1 if error exists
