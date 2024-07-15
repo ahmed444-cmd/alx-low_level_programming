@@ -13,20 +13,20 @@ int linear_search(int *array, size_t size, int value)
 {
 	size_t i = 0;
 
-	/* Check if the input array is NULL */
+	/* Checks if the input array pointer is NULL */
 	if (array == NULL)
 		return (-1);
 
-	/* iterate through the array */
+	/* Iterates on the array */
 	for (i = 0; i < size; i++)
 	{
-		/* print the comparison being made */
+		/* Displays the comparison in progress */
 		printf("Value checked array[%lu] = [%d]\n", i, array[i]);
 
-		/* if value is found return the index */
+		/* Returns the index if the value is found */
 		if (array[i] == value)
 			return (i);
 	}
-	/* Value not found in the array */
+	/* Indicates that the value was not found in the array */
 	return (-1);
 }
