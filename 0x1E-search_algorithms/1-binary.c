@@ -9,7 +9,7 @@
   * Return: -1 if the value is not found or if the array is NULL.
   *         Otherwise, returns the index of the found value.
   *
-  * Description: Outputs the current [sub]array being searched after each update.
+  * Description: Outputs curr [sub]array being searched after update.
   */
 int binary_search(int *array, size_t size, int value)
 {
