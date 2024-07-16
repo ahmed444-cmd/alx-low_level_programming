@@ -1,36 +1,15 @@
-#!/usr/bin/python3
-"""
-This script takes a letter as input and sends a POST request 
-to http://0.0.0.0:5000/search_user, including the letter as a parameter.
-"""
-import sys
-import requests
-
-
-if __name__ == "__main__":
-    letter = "" if len(sys.argv) == 1 else sys.argv[1]
-    payload = {"q": letter}
-
-    r = requests.post("http://0.0.0.0:5000/search_user", data=payload)
-    try:
-        response = r.json()
-        if response == {}:
-            print("No result")
-        else:
-            print("[{}] {}".format(response.get("id"), response.get("name")))
-    except ValueError:
-        print("Not a valid JSON")#include "search_algos.h"
+#include "search_algos.h"
 
 /**
-  * binary_search - Performs binary search on a sorted array of integers.
-  * @array: Pointer to the first element of the array to be searched.
-  * @size: Number of elements in the array.
-  * @value: The value to search for.
+  * binary_search - Locates an int in array of ints using the base2 srch algo.
+  * @array: Pointer to the initial element of the array to be searched.
+  * @size: Total number of elements in the array.
+  * @value: The target value to find.
   *
-  * Return: Returns -1 if the value is not found or if the array is NULL.
-  *         Otherwise, returns the index where the value is located.
+  * Return: -1 if the value is not found or if the array is NULL.
+  *         Otherwise, returns the index of the found value.
   *
-  * Description: Displays the [sub]array being searched after each change.
+  * Description: Outputs the current [sub]array being searched after each update.
   */
 int binary_search(int *array, size_t size, int value)
 {
